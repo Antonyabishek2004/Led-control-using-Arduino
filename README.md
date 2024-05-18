@@ -58,9 +58,34 @@ Emergency Signaling System </br>
 Weighing Machines </br>
 
 ## CIRCUIT DIAGRAM
+![EX NO 1 IOT  circuit diagram](https://github.com/Antonyabishek2004/Led-control-using-Arduino/assets/138849620/69cf7a87-54d1-4510-91d9-eed4ccfa1983)
+
 
 ## PROGRAM
+const int buttonPin = 3;     
+const int ledPin =  13;     
+int buttonState = 0;         
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  pinMode(buttonPin, INPUT);
+}
+void loop()
+{
+  buttonState = digitalRead(buttonPin);
+  if (buttonState == HIGH) 
+{
+  digitalWrite(ledPin, HIGH);
+} 
+  else 
+{
+  digitalWrite(ledPin, LOW);
+}
+}
 
 ## OUTPUT
+![EX NO 1 IOT output 1](https://github.com/Antonyabishek2004/Led-control-using-Arduino/assets/138849620/a849384e-65f2-4f93-9b32-74d344390053)
+![EX NO 1 IOT OUTPUT 2](https://github.com/Antonyabishek2004/Led-control-using-Arduino/assets/138849620/295ff492-7d24-45b6-81dc-89f6edbada1e)
+
+
 
 ## RESULT
