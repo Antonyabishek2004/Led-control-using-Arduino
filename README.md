@@ -89,3 +89,4 @@ void loop()
 
 
 ## RESULT
+Thus the LED control using an Arduino microcontroller and a push button.
